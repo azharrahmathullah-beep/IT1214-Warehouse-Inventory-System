@@ -8,7 +8,3 @@ Features:
 - Category filter
 - Update
 - Delete
-
-Run:
-javac *.java
-java Main
