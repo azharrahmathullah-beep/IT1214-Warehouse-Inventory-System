@@ -1,23 +1,14 @@
-# IT1214-Warehouse-Inventory-System
-Java_Warehouse-Inventory-Systemll
-# Java Calculator Project
+IT1214 Warehouse Inventory System
 
-## Project Description
-This is a simple Java program that performs basic arithmetic operations like addition, subtraction, multiplication, and division.
+Simple Java inventory system
 
-## How to Run
-1. Compile the program:
-   javac Main.java
+Features:
+- Add product
+- View product
+- Category filter
+- Update
+- Delete
 
-2. Run the program:
-   java Main
-
-## Sample Output
-Enter first number: 10
-Enter second number: 5
-
-Results:
-Addition: 15
-Subtraction: 5
-Multiplication: 50
-Division: 2
+Run:
+javac *.java
+java Main
