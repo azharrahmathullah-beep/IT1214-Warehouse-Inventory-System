@@ -1,11 +1,13 @@
 public class Product {
-     int id;
-     String name;
-     String category;
-     int quantity;
-     double price;
+    public int id;
+    public String name;
+    public String category;
+    public int quantity;
+    public double price;
 
-    public Product(int id, String name, String category, int quantity, double price) {
+    
+    public Product(int id, String name,            
+String category, int quantity, double price) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -13,16 +15,7 @@ public class Product {
         this.price = price;
     }
 
-    public int getId() { return id; }
-    public String getName() { return name; }
-    public String getCategory() { return category; }
-    public int getQuantity() { return quantity; }
-    public double getPrice() { return price; }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
+   
     public void display() {
         System.out.println("ID: " + id +
                 ", Name: " + name +
