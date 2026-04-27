@@ -1,13 +1,16 @@
 import java.util.ArrayList;
 
 public class Inventory {
-    private ArrayList<Product> products = new ArrayList<>();
 
+    public ArrayList<Product> products = new ArrayList<>();
+
+    // Add product
     public void addProduct(Product p) {
         products.add(p);
         System.out.println("Product Added!");
     }
 
+    // View all products
     public void viewAll() {
         if (products.size() == 0) {
             System.out.println("No products available.");
@@ -19,14 +22,14 @@ public class Inventory {
         }
     }
 
-  
+    // View by category
     public void viewByCategory(String category) {
         boolean found = false;
 
         for (int i = 0; i < products.size(); i++) {
             Product p = products.get(i);
 
-            if (p.getCategory().equals(category)) {
+            if (p.category.equals(category)) {
                 p.display();
                 found = true;
             }
@@ -37,12 +40,13 @@ public class Inventory {
         }
     }
 
+    // Update quantity
     public void updateQuantity(int id, int qty) {
         for (int i = 0; i < products.size(); i++) {
             Product p = products.get(i);
 
-            if (p.getId() == id) {
-                p.setQuantity(qty);
+            if (p.id == id) {
+                p.quantity = qty;
                 System.out.println("Updated!");
                 return;
             }
@@ -51,12 +55,12 @@ public class Inventory {
         System.out.println("Product not found.");
     }
 
-    
+    // Delete product
     public void deleteProduct(int id) {
         boolean found = false;
 
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getId() == id) {
+            if (products.get(i).id == id) {
                 products.remove(i);
                 System.out.println("Product Deleted!");
                 found = true;
@@ -69,3 +73,4 @@ public class Inventory {
         }
     }
 }
+
