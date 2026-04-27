@@ -9,7 +9,7 @@ Features:
 - Update
 - Delete
 
-How it will work
+How  will work
 My system is a menu-driven inventory system.
 The user selects options like add, view, update, or delete products.
 Product details are stored in an ArrayList.
